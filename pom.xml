@@ -8,6 +8,7 @@
 
 	<properties>
 		<pentaho-authentication-ext.version>0.1</pentaho-authentication-ext.version>
+		<java-lib-project>../pentaho-authentication-ext</java-lib-project>
 	</properties>
 
 	<dependencies>

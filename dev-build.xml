@@ -8,7 +8,7 @@
 	</target>
 	
 	<target name="deploy-unpack" depends="delete-deploy-dir">
-		<unzip dest="${pentaho.system.dir}" src="${artefact}"></unzip>
+		<unzip dest="${pentaho.system.dir}" src="${artifact}"></unzip>
 	</target>
 	
 	<target name="overwrite-sources">
@@ -17,6 +17,7 @@
 		<copy todir="." verbose="true">
 			<fileset dir="${plugin.deploy.dir}">
 				<exclude name="**/pentaho-authentication-ext-0.1.jar"/>
+				<exclude name="**/system/**"/>
 			</fileset>
 		</copy>
 	</target>

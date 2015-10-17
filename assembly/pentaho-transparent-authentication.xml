@@ -21,6 +21,10 @@
 				<exclude>.project</exclude>
 			</excludes>
 		</fileSet>
+		<fileSet>
+			<directory>${java-lib-project}/src/main/resources/pentaho-solutions/system</directory>
+			<outputDirectory>endpoints/kettle/system</outputDirectory>
+		</fileSet>
 	</fileSets>
 	<!-- use this section if you want to package dependencies -->
 	<dependencySets>
