@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="pentaho-transparent-authentication-plugin">
+<project name="pentaho-transparent-authentication-plugin" default="deploy-unpack">
 	<description>Deploy utility for a development environment</description>
 	<property file="dev-build.properties"></property>
 	
@@ -9,6 +9,14 @@
 	
 	<target name="deploy-unpack" depends="delete-deploy-dir">
 		<unzip dest="${pentaho.system.dir}" src="${artefact}"></unzip>
+	</target>
+	
+	<target name="overwrite-sources">
+		<!-- Copies files back from pentaho to the project folder. 
+		Useful when files like the dashboards' ones are modified with the Pentaho web editor -->
+		<copy todir=".">
+			<fileset dir="${pentaho.system.dir}/PentahoTransparentAuthentication"></fileset>
+		</copy>
 	</target>
 	
 	<!--
