@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="pentaho-transparent-authentication-plugin">
+	<description>Deploy utility for a development environment</description>
+	<property file="dev-build.properties"></property>
+	
+	<target name="delete-deploy-dir">
+		<delete dir="${plugin.deploy.dir}"></delete>
+	</target>
+	
+	<target name="deploy-unpack" depends="delete-deploy-dir">
+		<unzip dest="${pentaho.system.dir}" src="${artefact}"></unzip>
+	</target>
+	
+	<!--
+	<target name="fast-deploy">
+		<copy file="${mvn.target.dir}/pentaho-authentication-ext-0.1.jar" todir="${pentaho.webapp.webinf.lib}" overwrite="true">
+		</copy>
+		<copy todir="${pentaho.system.dir}" overwrite="true">
+			<fileset dir="${mvn.target.system.dir}"></fileset>
+		</copy>
+	</target>
+	-->
+	
+</project>
