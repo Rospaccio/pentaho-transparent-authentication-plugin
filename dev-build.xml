@@ -14,9 +14,9 @@
 	<target name="overwrite-sources">
 		<!-- Copies files back from pentaho to the project folder. 
 		Useful when files like the dashboards' ones are modified with the Pentaho web editor -->
-		<copy todir=".">
+		<copy todir="." verbose="true">
 			<fileset dir="${plugin.deploy.dir}">
-				<exclude name="pentaho-authentication-ext-0.1.jar"/>
+				<exclude name="**/pentaho-authentication-ext-0.1.jar"/>
 			</fileset>
 		</copy>
 	</target>
