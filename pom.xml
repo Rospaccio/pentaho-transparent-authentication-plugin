@@ -34,7 +34,7 @@
 							<descriptors>
 								<descriptor>assembly/pentaho-transparent-authentication.xml</descriptor>
 							</descriptors>
-							<finalName>pentaho-transparent-authentication</finalName>
+							<finalName>PentahoTransparentAuthentication</finalName>
 						</configuration>
 <!-- 						<configuration> -->
 <!-- 	                       <descriptorRefs> -->

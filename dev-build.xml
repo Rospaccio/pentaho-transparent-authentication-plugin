@@ -15,18 +15,10 @@
 		<!-- Copies files back from pentaho to the project folder. 
 		Useful when files like the dashboards' ones are modified with the Pentaho web editor -->
 		<copy todir=".">
-			<fileset dir="${pentaho.system.dir}/PentahoTransparentAuthentication"></fileset>
+			<fileset dir="${plugin.deploy.dir}">
+				<exclude name="pentaho-authentication-ext-0.1.jar"/>
+			</fileset>
 		</copy>
 	</target>
-	
-	<!--
-	<target name="fast-deploy">
-		<copy file="${mvn.target.dir}/pentaho-authentication-ext-0.1.jar" todir="${pentaho.webapp.webinf.lib}" overwrite="true">
-		</copy>
-		<copy todir="${pentaho.system.dir}" overwrite="true">
-			<fileset dir="${mvn.target.system.dir}"></fileset>
-		</copy>
-	</target>
-	-->
 	
 </project>
