@@ -213,7 +213,7 @@
      },
      {
       "name": "html",
-      "value": "<ul class=\"nav nav-pills pull-right\" style=\"margin-left: 20px; margin-right: 20px; margin-top: 5px; margin-bottom: 5px;\">\n  <li role=\"presentation\"><a href=\"/pentaho/plugin/PentahoTransparentAuthentication/api/about\">Home</a></li>\n  <li role=\"presentation\"><a href=\"/pentaho/plugin/PentahoTransparentAuthentication/api/install\">Install</a></li>\n  <li role=\"presentation\" class=\"active\"><a href=\"#\">About</a></li>\n</ul>\n<h3 class=\"text-muted\">Pentaho transparent authentication</h3> ",
+      "value": "<ul class=\"nav nav-pills pull-right\" style=\"margin-left: 20px; margin-right: 20px; margin-top: 5px; margin-bottom: 5px;\">\n  <li role=\"presentation\"><a href=\"/pentaho/plugin/PentahoTransparentAuthentication/api/main\">Home</a></li>\n  <li role=\"presentation\"><a href=\"/pentaho/plugin/PentahoTransparentAuthentication/api/install\">Install</a></li>\n  <li role=\"presentation\" class=\"active\"><a href=\"#\">About</a></li>\n</ul>\n<h3 class=\"text-muted\">Pentaho transparent authentication</h3> ",
       "type": "Html"
      },
      {
