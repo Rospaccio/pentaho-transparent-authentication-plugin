@@ -32,7 +32,7 @@
 			<outputDirectory>endpoints/kettle/lib</outputDirectory>
 			<includes>
 				<include>
-					org.merka.pentaho.ext:pentaho-authentication-ext
+					org.merka.pentaho.ext:pentaho-transparent-authentication-lib
 				</include>
 			</includes>
 			<useStrictFiltering>true</useStrictFiltering>

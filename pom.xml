@@ -7,15 +7,15 @@
 	<packaging>pom</packaging>
 
 	<properties>
-		<pentaho-authentication-ext.version>0.1</pentaho-authentication-ext.version>
+		<pentaho-transparent-authentication-lib.version>0.1</pentaho-transparent-authentication-lib.version>
 		<java-lib-project>../pentaho-authentication-ext</java-lib-project>
 	</properties>
 
 	<dependencies>
 		<dependency>
 			<groupId>org.merka.pentaho.ext</groupId>
-			<artifactId>pentaho-authentication-ext</artifactId>
-			<version>${pentaho-authentication-ext.version}</version>
+			<artifactId>pentaho-transparent-authentication-lib</artifactId>
+			<version>${pentaho-transparent-authentication-lib.version}</version>
 		</dependency>
 	</dependencies>
 
