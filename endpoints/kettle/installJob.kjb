@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <job>
-  <name>install</name>
+  <name>installJob</name>
     <description/>
     <extended_description/>
     <job_version/>
@@ -13,7 +13,7 @@
     <parameters>
         <parameter>
             <name>pentahoBaseDir</name>
-            <default_value>C&#x3a;&#x5c;biserver-ce-5.4</default_value>
+            <default_value>&#x24;&#x7b;Internal.Job.Filename.Directory&#x7d;&#x24;&#x7b;file.separator&#x7d;..&#x24;&#x7b;file.separator&#x7d;..&#x24;&#x7b;file.separator&#x7d;..&#x24;&#x7b;file.separator&#x7d;..&#x24;&#x7b;file.separator&#x7d;..</default_value>
             <description>Base directory of the pentaho installation</description>
         </parameter>
     </parameters>
@@ -66,16 +66,16 @@
       <filename/>
       <fields>
         <field>
-          <name>&#x24;&#x7b;Internal.Job.Filename.Directory&#x7d;&#x24;&#x7b;file.separator&#x7d;lib&#x24;&#x7b;file.separator&#x7d;pentaho-authentication-ext.jar</name>
+          <name>&#x24;&#x7b;Internal.Job.Filename.Directory&#x7d;&#x24;&#x7b;file.separator&#x7d;lib&#x24;&#x7b;file.separator&#x7d;pentaho-transparent-authentication-lib-0.1.jar</name>
         </field>
         <field>
-          <name>&#x24;&#x7b;Internal.Job.Filename.Directory&#x7d;&#x24;&#x7b;file.separator&#x7d;system&#x24;&#x7b;file.separator&#x7d;pentaho-authentication-ext.properties</name>
+          <name>&#x24;&#x7b;Internal.Job.Filename.Directory&#x7d;&#x24;&#x7b;file.separator&#x7d;system&#x24;&#x7b;file.separator&#x7d;pentaho-transparent-authentication.properties</name>
         </field>
         <field>
-          <name>&#x24;&#x7b;Internal.Job.Filename.Directory&#x7d;&#x24;&#x7b;file.separator&#x7d;system&#x24;&#x7b;file.separator&#x7d;mappings.json</name>
+          <name>&#x24;&#x7b;Internal.Job.Filename.Directory&#x7d;&#x24;&#x7b;file.separator&#x7d;system&#x24;&#x7b;file.separator&#x7d;pentaho-transparent-authentication-mappings.json</name>
         </field>
         <field>
-          <name>&#x24;&#x7b;Internal.Job.Filename.Directory&#x7d;&#x24;&#x7b;file.separator&#x7d;system&#x24;&#x7b;file.separator&#x7d;pentaho-authentication-ext.xml</name>
+          <name>&#x24;&#x7b;Internal.Job.Filename.Directory&#x7d;&#x24;&#x7b;file.separator&#x7d;system&#x24;&#x7b;file.separator&#x7d;pentaho-transparent-authentication.xml</name>
         </field>
       </fields>
       <parallel>N</parallel>
@@ -109,30 +109,30 @@
       <create_destination_folder>N</create_destination_folder>
       <fields>
         <field>
-          <source_filefolder>&#x24;&#x7b;Internal.Job.Filename.Directory&#x7d;&#x2f;lib&#x2f;pentaho-authentication-ext.jar</source_filefolder>
+          <source_filefolder>&#x24;&#x7b;Internal.Job.Filename.Directory&#x7d;&#x2f;lib&#x2f;pentaho-transparent-authentication-lib-0.1.jar</source_filefolder>
           <source_configuration_name>LOCAL-SOURCE-FILE-0</source_configuration_name>
-          <destination_filefolder>&#x24;&#x7b;pentahoBaseDir&#x7d;&#x24;&#x7b;file.separator&#x7d;tomcat&#x24;&#x7b;file.separator&#x7d;webapps&#x24;&#x7b;file.separator&#x7d;pentaho&#x24;&#x7b;file.separator&#x7d;WEB-INF&#x24;&#x7b;file.separator&#x7d;lib&#x24;&#x7b;file.separator&#x7d;pentaho-authentication-ext.jar</destination_filefolder>
+          <destination_filefolder>&#x24;&#x7b;pentahoBaseDir&#x7d;&#x24;&#x7b;file.separator&#x7d;tomcat&#x24;&#x7b;file.separator&#x7d;webapps&#x24;&#x7b;file.separator&#x7d;pentaho&#x24;&#x7b;file.separator&#x7d;WEB-INF&#x24;&#x7b;file.separator&#x7d;lib</destination_filefolder>
           <destination_configuration_name>STATIC-DEST-FILE-0</destination_configuration_name>
           <wildcard/>
         </field>
         <field>
-          <source_filefolder>&#x24;&#x7b;Internal.Job.Filename.Directory&#x7d;&#x2f;system&#x2f;mappings.json</source_filefolder>
+          <source_filefolder>&#x24;&#x7b;Internal.Job.Filename.Directory&#x7d;&#x2f;system&#x2f;pentaho-transparent-authentication-mappings.json</source_filefolder>
           <source_configuration_name>LOCAL-SOURCE-FILE-1</source_configuration_name>
-          <destination_filefolder>&#x24;&#x7b;pentahoBaseDir&#x7d;&#x24;&#x7b;file.separator&#x7d;pentaho-solutions&#x24;&#x7b;file.separator&#x7d;system&#x24;&#x7b;file.separator&#x7d;mappings.json</destination_filefolder>
-          <destination_configuration_name>STATIC-DEST-FILE-1</destination_configuration_name>
+          <destination_filefolder>&#x24;&#x7b;pentahoBaseDir&#x7d;&#x24;&#x7b;file.separator&#x7d;pentaho-solutions&#x24;&#x7b;file.separator&#x7d;system</destination_filefolder>
+          <destination_configuration_name>STATIC-DEST-FILE-3</destination_configuration_name>
           <wildcard/>
         </field>
         <field>
-          <source_filefolder>&#x24;&#x7b;Internal.Job.Filename.Directory&#x7d;&#x2f;system&#x2f;pentaho-authentication-ext.properties</source_filefolder>
+          <source_filefolder>&#x24;&#x7b;Internal.Job.Filename.Directory&#x7d;&#x2f;system&#x2f;pentaho-transparent-authentication.properties</source_filefolder>
           <source_configuration_name>LOCAL-SOURCE-FILE-2</source_configuration_name>
-          <destination_filefolder>&#x24;&#x7b;pentahoBaseDir&#x7d;&#x24;&#x7b;file.separator&#x7d;pentaho-solutions&#x24;&#x7b;file.separator&#x7d;system&#x24;&#x7b;file.separator&#x7d;pentaho-authentication-ext.properties</destination_filefolder>
-          <destination_configuration_name>STATIC-DEST-FILE-2</destination_configuration_name>
+          <destination_filefolder>&#x24;&#x7b;pentahoBaseDir&#x7d;&#x24;&#x7b;file.separator&#x7d;pentaho-solutions&#x24;&#x7b;file.separator&#x7d;system</destination_filefolder>
+          <destination_configuration_name>STATIC-DEST-FILE-3</destination_configuration_name>
           <wildcard/>
         </field>
         <field>
-          <source_filefolder>&#x24;&#x7b;Internal.Job.Filename.Directory&#x7d;&#x2f;system&#x2f;pentaho-authentication-ext.xml</source_filefolder>
+          <source_filefolder>&#x24;&#x7b;Internal.Job.Filename.Directory&#x7d;&#x2f;system&#x2f;pentaho-transparent-authentication.xml</source_filefolder>
           <source_configuration_name>LOCAL-SOURCE-FILE-3</source_configuration_name>
-          <destination_filefolder>&#x24;&#x7b;pentahoBaseDir&#x7d;&#x24;&#x7b;file.separator&#x7d;pentaho-solutions&#x24;&#x7b;file.separator&#x7d;system&#x24;&#x7b;file.separator&#x7d;pentaho-authentication-ext.xml</destination_filefolder>
+          <destination_filefolder>&#x24;&#x7b;pentahoBaseDir&#x7d;&#x24;&#x7b;file.separator&#x7d;pentaho-solutions&#x24;&#x7b;file.separator&#x7d;system</destination_filefolder>
           <destination_configuration_name>STATIC-DEST-FILE-3</destination_configuration_name>
           <wildcard/>
         </field>
@@ -184,14 +184,52 @@
       <yloc>107</yloc>
       </entry>
     <entry>
+      <name>Copia i file 2</name>
+      <description/>
+      <type>COPY_FILES</type>
+      <copy_empty_folders>Y</copy_empty_folders>
+      <arg_from_previous>N</arg_from_previous>
+      <overwrite_files>Y</overwrite_files>
+      <include_subfolders>N</include_subfolders>
+      <remove_source_files>N</remove_source_files>
+      <add_result_filesname>N</add_result_filesname>
+      <destination_is_a_file>Y</destination_is_a_file>
+      <create_destination_folder>N</create_destination_folder>
+      <fields>
+        <field>
+          <source_filefolder>&#x24;&#x7b;pentahoBaseDir&#x7d;&#x24;&#x7b;file.separator&#x7d;pentaho-solutions&#x24;&#x7b;file.separator&#x7d;system&#x24;&#x7b;file.separator&#x7d;transformed.xml</source_filefolder>
+          <source_configuration_name>LOCAL-SOURCE-FILE-0</source_configuration_name>
+          <destination_filefolder>&#x24;&#x7b;pentahoBaseDir&#x7d;&#x24;&#x7b;file.separator&#x7d;pentaho-solutions&#x24;&#x7b;file.separator&#x7d;system&#x24;&#x7b;file.separator&#x7d;pentaho-spring-beans.xml</destination_filefolder>
+          <destination_configuration_name>STATIC-DEST-FILE-0</destination_configuration_name>
+          <wildcard/>
+        </field>
+      </fields>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>783</xloc>
+      <yloc>108</yloc>
+      </entry>
+    <entry>
       <name>Successo</name>
       <description/>
       <type>SUCCESS</type>
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>777</xloc>
+      <xloc>949</xloc>
       <yloc>106</yloc>
+      </entry>
+    <entry>
+      <name>Interrompi job 2</name>
+      <description/>
+      <type>ABORT</type>
+      <message/>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>783</xloc>
+      <yloc>263</yloc>
       </entry>
   </entries>
   <hops>
@@ -233,11 +271,29 @@
     </hop>
     <hop>
       <from>Trasformazione</from>
+      <to>Copia i file 2</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Copia i file 2</from>
       <to>Successo</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
       <enabled>Y</enabled>
       <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Copia i file 2</from>
+      <to>Interrompi job 2</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>N</evaluation>
       <unconditional>N</unconditional>
     </hop>
   </hops>

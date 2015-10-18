@@ -16,9 +16,9 @@ http://www.pentaho.com/schema/pentaho-system http://www.pentaho.com/schema/penta
 	
 	<xsl:template match="b:import[@resource='applicationContext-spring-security.xml']">
 			<import resource="applicationContext-spring-security.xml" />
-			<xsl:comment> Addition for pentaho-authentication-ext - Start. </xsl:comment>
-			<import resource="pentaho-authentication-ext.xml" />
-			<xsl:comment> Addition for pentaho-authentication-ext - End. </xsl:comment>
+			<xsl:comment> Addition for pentaho-transparent-authentication - Start. </xsl:comment>
+			<import resource="pentaho-transparent-authentication.xml" />
+			<xsl:comment> Addition for pentaho-transparent-authentication - End. </xsl:comment>
 	</xsl:template>
 	
 	<xsl:template match="b:import">

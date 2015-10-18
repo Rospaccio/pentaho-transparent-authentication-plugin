@@ -22,4 +22,8 @@
 		</copy>
 	</target>
 	
+	<target name="uninstall-lib-fast">
+		
+	</target>
+	
 </project>
