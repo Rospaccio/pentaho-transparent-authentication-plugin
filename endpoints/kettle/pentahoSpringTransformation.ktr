@@ -230,7 +230,7 @@
     <xslfilefield/>
     <xslfilefielduse>N</xslfilefielduse>
     <xslfieldisafile>N</xslfieldisafile>
-    <xslfactory>SAXON</xslfactory>
+    <xslfactory>JAXP</xslfactory>
     <parameters>
       <parameter>
         <field>Contenuto file</field>
