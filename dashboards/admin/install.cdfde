@@ -828,22 +828,22 @@
      },
      {
       "name": "expression",
-      "value": "function onInstallButtonClick(){\n\n    Dashboards.incrementRunningCalls();\n    \n    PentahoTAApp.runEndpoint(\n        'PentahoTransparentAuthentication',\n        'installJob',\n        {\n            params: {\n            },\n\n            success: function(json) {\n                $('#alertPanel').append('<div class=\"alert alert-info alert-dismissible\" role=\"alert\" style=\"margin-left: 20px; margin-right: 20px;\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button><strong>Please, restart Pentaho!</strong> To activate the installation.</div>');\n                Dashboards.decrementRunningCalls();\n            },\n    \n            error: function(json) {\n                $('#alertPanel').append('<div class=\"alert alert-danger alert-dismissible\" role=\"alert\" style=\"margin-left: 20px; margin-right: 20px;\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button><strong>Something wrong happens.</strong> Please check the log to understand and solve the problem.</div>');\n                Dashboards.decrementRunningCalls();\n            }\n        }\n    );\n} ",
+      "value": "function onInstallButtonClick(){\r\n\r\n    Dashboards.incrementRunningCalls();\r\n    \r\n    PentahoTAApp.runEndpoint(\r\n        'PentahoTransparentAuthentication',\r\n        'installJob',\r\n        {\r\n            params: {\r\n            },\r\n\r\n            success: function(json) {\r\n                $('#alertPanel').append('<div class=\"alert alert-info alert-dismissible\" role=\"alert\" style=\"margin-left: 20px; margin-right: 20px;\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button><strong>Please, restart Pentaho!</strong> To activate the installation.</div>');\r\n                Dashboards.decrementRunningCalls();\r\n            },\r\n    \r\n            error: function(json) {\r\n                $('#alertPanel').append('<div class=\"alert alert-danger alert-dismissible\" role=\"alert\" style=\"margin-left: 20px; margin-right: 20px;\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button><strong>Something wrong happens.</strong> Please check the log to understand and solve the problem.</div>');\r\n                Dashboards.decrementRunningCalls();\r\n            }\r\n        }\r\n    );\r\n} ",
       "type": "JavaScript"
      },
      {
       "name": "failureCallback",
-      "value": "",
+      "value": "function failure() { alert(\"FAIL\"); } ",
       "type": "JavaScript"
      },
      {
       "name": "successCallback",
-      "value": "",
+      "value": "function success() { alert(\"OK!\"); } ",
       "type": "JavaScript"
      },
      {
       "name": "Datasource",
-      "value": "",
+      "value": "installJob",
       "type": "Datasource"
      },
      {

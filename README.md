@@ -16,7 +16,7 @@ Now execute:
 
     mvn package
 
-The build will produce a file named "PentahoTransparentAuthentication-\<version\>.zip"
+The build will produce a file named **PentahoTransparentAuthentication-&lt;version>.zip**
 in the target directory. This is effectively the final artifact that is downloaded
 when you install the plugin from the Pentaho Marketplace.
 
