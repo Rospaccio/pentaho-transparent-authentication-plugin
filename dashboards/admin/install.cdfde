@@ -828,7 +828,7 @@
      },
      {
       "name": "expression",
-      "value": "function onInstallButtonClick(){\r\n\r\n    Dashboards.incrementRunningCalls();\r\n    \r\n    PentahoTAApp.runEndpoint(\r\n        'PentahoTransparentAuthentication',\r\n        'installJob',\r\n        {\r\n            params: {\r\n            },\r\n\r\n            success: function(json) {\r\n                $('#alertPanel').append('<div class=\"alert alert-info alert-dismissible\" role=\"alert\" style=\"margin-left: 20px; margin-right: 20px;\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button><strong>Please, restart Pentaho!</strong> To activate the installation.</div>');\r\n                Dashboards.decrementRunningCalls();\r\n            },\r\n    \r\n            error: function(json) {\r\n                $('#alertPanel').append('<div class=\"alert alert-danger alert-dismissible\" role=\"alert\" style=\"margin-left: 20px; margin-right: 20px;\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button><strong>Something wrong happens.</strong> Please check the log to understand and solve the problem.</div>');\r\n                Dashboards.decrementRunningCalls();\r\n            }\r\n        }\r\n    );\r\n} ",
+      "value": "",
       "type": "JavaScript"
      },
      {
@@ -843,7 +843,7 @@
      },
      {
       "name": "Datasource",
-      "value": "installJob",
+      "value": "installJobRef",
       "type": "Datasource"
      },
      {
@@ -976,6 +976,46 @@
       "type": "Boolean"
      }
     ]
+   },
+   {
+    "id": "PENTAHOTRANSPARENTAUTHENTICATION_CPKENDPOINTS",
+    "name": "PENTAHOTRANSPARENTAUTHENTICATION Endpoints",
+    "type": "Label",
+    "typeDesc": "<i>Group</i>",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "Group",
+      "value": "PENTAHOTRANSPARENTAUTHENTICATION Endpoints",
+      "type": "Label"
+     }
+    ]
+   },
+   {
+    "id": "47e751e6-289c-3190-b70c-fcca0d27964e",
+    "type": "ComponentsPentahoTransparentAuthentication_installJob_CPKENDPOINT",
+    "typeDesc": "installJob Endpoint",
+    "parent": "PENTAHOTRANSPARENTAUTHENTICATION_CPKENDPOINTS",
+    "properties": [
+     {
+      "name": "name",
+      "value": "installJobRef",
+      "type": "Id"
+     },
+     {
+      "name": "stepName",
+      "value": "OUTPUT",
+      "type": "String"
+     },
+     {
+      "name": "kettleOutput",
+      "value": "Inferred",
+      "type": "kettleOutputCustom"
+     }
+    ],
+    "meta": "CPK",
+    "meta_pluginId": "PentahoTransparentAuthentication",
+    "meta_endpoint": "installJob"
    }
   ]
  },
