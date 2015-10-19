@@ -833,12 +833,12 @@
      },
      {
       "name": "failureCallback",
-      "value": "function failure() { alert(\"FAIL\"); } ",
+      "value": "function(json) \r\n{\r\n    $('#alertPanel')\r\n\t\t.append('<div class=\\\"alert alert-danger alert-dismissible\\\" role=\\\"alert\\\" style=\\\"margin-left: 20px; margin-right: 20px;\\\"><button type=\\\"button\\\" class=\\\"close\\\" data-dismiss=\\\"alert\\\" aria-label=\\\"Close\\\"><span aria-hidden=\\\"true\\\">&times;</span></button><strong>Something wrong happens.</strong> Please check the log to understand and solve the problem.</div>');\r\n\tDashboards.decrementRunningCalls();\r\n} ",
       "type": "JavaScript"
      },
      {
       "name": "successCallback",
-      "value": "function success() { alert(\"OK!\"); } ",
+      "value": "function(json) \r\n{\r\n    $('#alertPanel').append('<div class=\\\"alert alert-info alert-dismissible\\\" role=\\\"alert\\\" style=\\\"margin-left: 20px; margin-right: 20px;\\\"><button type=\\\"button\\\" class=\\\"close\\\" data-dismiss=\\\"alert\\\" aria-label=\\\"Close\\\"><span aria-hidden=\\\"true\\\">&times;</span></button><strong>Please, restart Pentaho!</strong> To activate the installation.</div>');\r\n    Dashboards.decrementRunningCalls();\r\n} ",
       "type": "JavaScript"
      },
      {
