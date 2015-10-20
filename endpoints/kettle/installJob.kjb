@@ -40,33 +40,13 @@
    <shared_objects_file/>
   <entries>
     <entry>
-      <name>START</name>
-      <description/>
-      <type>SPECIAL</type>
-      <start>Y</start>
-      <dummy>N</dummy>
-      <repeat>N</repeat>
-      <schedulerType>0</schedulerType>
-      <intervalSeconds>0</intervalSeconds>
-      <intervalMinutes>60</intervalMinutes>
-      <hour>12</hour>
-      <minutes>0</minutes>
-      <weekDay>1</weekDay>
-      <DayOfMonth>1</DayOfMonth>
-      <parallel>N</parallel>
-      <draw>Y</draw>
-      <nr>0</nr>
-      <xloc>91</xloc>
-      <yloc>106</yloc>
-      </entry>
-    <entry>
       <name>Controlla se il file esiste</name>
       <description/>
       <type>FILES_EXIST</type>
       <filename/>
       <fields>
         <field>
-          <name>&#x24;&#x7b;Internal.Job.Filename.Directory&#x7d;&#x24;&#x7b;file.separator&#x7d;lib&#x24;&#x7b;file.separator&#x7d;pentaho-transparent-authentication-lib-0.1.jar</name>
+          <name>&#x24;&#x7b;Internal.Job.Filename.Directory&#x7d;&#x24;&#x7b;file.separator&#x7d;lib&#x24;&#x7b;file.separator&#x7d;pentaho-transparent-authentication-lib-pentaho6-0.1.jar</name>
         </field>
         <field>
           <name>&#x24;&#x7b;Internal.Job.Filename.Directory&#x7d;&#x24;&#x7b;file.separator&#x7d;system&#x24;&#x7b;file.separator&#x7d;pentaho-transparent-authentication.properties</name>
@@ -109,7 +89,7 @@
       <create_destination_folder>N</create_destination_folder>
       <fields>
         <field>
-          <source_filefolder>&#x24;&#x7b;Internal.Job.Filename.Directory&#x7d;&#x2f;lib&#x2f;pentaho-transparent-authentication-lib-0.1.jar</source_filefolder>
+          <source_filefolder>&#x24;&#x7b;Internal.Job.Filename.Directory&#x7d;&#x2f;lib&#x2f;pentaho-transparent-authentication-lib-pentaho6-0.1.jar</source_filefolder>
           <source_configuration_name>LOCAL-SOURCE-FILE-0</source_configuration_name>
           <destination_filefolder>&#x24;&#x7b;pentahoBaseDir&#x7d;&#x24;&#x7b;file.separator&#x7d;tomcat&#x24;&#x7b;file.separator&#x7d;webapps&#x24;&#x7b;file.separator&#x7d;pentaho&#x24;&#x7b;file.separator&#x7d;WEB-INF&#x24;&#x7b;file.separator&#x7d;lib</destination_filefolder>
           <destination_configuration_name>STATIC-DEST-FILE-0</destination_configuration_name>
@@ -245,17 +225,28 @@
       <xloc>921</xloc>
       <yloc>109</yloc>
       </entry>
+    <entry>
+      <name>START</name>
+      <description/>
+      <type>SPECIAL</type>
+      <start>Y</start>
+      <dummy>N</dummy>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <intervalSeconds>0</intervalSeconds>
+      <intervalMinutes>60</intervalMinutes>
+      <hour>12</hour>
+      <minutes>0</minutes>
+      <weekDay>1</weekDay>
+      <DayOfMonth>1</DayOfMonth>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>70</xloc>
+      <yloc>107</yloc>
+      </entry>
   </entries>
   <hops>
-    <hop>
-      <from>START</from>
-      <to>Controlla se il file esiste</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
-      <unconditional>Y</unconditional>
-    </hop>
     <hop>
       <from>Controlla se il file esiste</from>
       <to>Interrompi job</to>
@@ -318,6 +309,15 @@
       <enabled>Y</enabled>
       <evaluation>Y</evaluation>
       <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>START</from>
+      <to>Controlla se il file esiste</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>Y</unconditional>
     </hop>
   </hops>
   <notepads>
