@@ -60,7 +60,7 @@
       <yloc>106</yloc>
       </entry>
     <entry>
-      <name>Controlla se il file esiste</name>
+      <name>Check if master files exist</name>
       <description/>
       <type>FILES_EXIST</type>
       <filename/>
@@ -85,7 +85,7 @@
       <yloc>108</yloc>
       </entry>
     <entry>
-      <name>Interrompi job</name>
+      <name>Stop job</name>
       <description/>
       <type>ABORT</type>
       <message>ERROR</message>
@@ -96,7 +96,7 @@
       <yloc>273</yloc>
       </entry>
     <entry>
-      <name>Copia i file</name>
+      <name>Copy files</name>
       <description/>
       <type>COPY_FILES</type>
       <copy_empty_folders>Y</copy_empty_folders>
@@ -151,7 +151,7 @@
       <yloc>109</yloc>
       </entry>
     <entry>
-      <name>Trasformazione</name>
+      <name>XSL transformation</name>
       <description/>
       <type>TRANS</type>
       <specification_method>filename</specification_method>
@@ -184,7 +184,7 @@
       <yloc>107</yloc>
       </entry>
     <entry>
-      <name>Copia i file 2</name>
+      <name>Copy transformed file</name>
       <description/>
       <type>COPY_FILES</type>
       <copy_empty_folders>Y</copy_empty_folders>
@@ -217,11 +217,11 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>1066</xloc>
-      <yloc>109</yloc>
+      <xloc>1092</xloc>
+      <yloc>111</yloc>
       </entry>
     <entry>
-      <name>Interrompi job 2</name>
+      <name>Stop job &#x28;2&#x29;</name>
       <description/>
       <type>ABORT</type>
       <message/>
@@ -232,7 +232,7 @@
       <yloc>263</yloc>
       </entry>
     <entry>
-      <name>Cancella i nomi file dal risultato</name>
+      <name>Delete files from the result</name>
       <description/>
       <type>DELETE_RESULT_FILENAMES</type>
       <foldername/>
@@ -242,14 +242,14 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>921</xloc>
-      <yloc>109</yloc>
+      <xloc>947</xloc>
+      <yloc>111</yloc>
       </entry>
   </entries>
   <hops>
     <hop>
       <from>START</from>
-      <to>Controlla se il file esiste</to>
+      <to>Check if master files exist</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
       <enabled>Y</enabled>
@@ -257,8 +257,8 @@
       <unconditional>Y</unconditional>
     </hop>
     <hop>
-      <from>Controlla se il file esiste</from>
-      <to>Interrompi job</to>
+      <from>Check if master files exist</from>
+      <to>Stop job</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
       <enabled>Y</enabled>
@@ -266,8 +266,8 @@
       <unconditional>N</unconditional>
     </hop>
     <hop>
-      <from>Controlla se il file esiste</from>
-      <to>Copia i file</to>
+      <from>Check if master files exist</from>
+      <to>Copy files</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
       <enabled>Y</enabled>
@@ -275,8 +275,8 @@
       <unconditional>N</unconditional>
     </hop>
     <hop>
-      <from>Copia i file</from>
-      <to>Trasformazione</to>
+      <from>Copy files</from>
+      <to>XSL transformation</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
       <enabled>Y</enabled>
@@ -284,8 +284,8 @@
       <unconditional>N</unconditional>
     </hop>
     <hop>
-      <from>Trasformazione</from>
-      <to>Copia i file 2</to>
+      <from>XSL transformation</from>
+      <to>Copy transformed file</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
       <enabled>Y</enabled>
@@ -293,8 +293,8 @@
       <unconditional>N</unconditional>
     </hop>
     <hop>
-      <from>Copia i file 2</from>
-      <to>Interrompi job 2</to>
+      <from>Copy transformed file</from>
+      <to>Stop job &#x28;2&#x29;</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
       <enabled>Y</enabled>
@@ -302,8 +302,8 @@
       <unconditional>N</unconditional>
     </hop>
     <hop>
-      <from>Copia i file 2</from>
-      <to>Cancella i nomi file dal risultato</to>
+      <from>Copy transformed file</from>
+      <to>Delete files from the result</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
       <enabled>Y</enabled>
@@ -311,7 +311,7 @@
       <unconditional>N</unconditional>
     </hop>
     <hop>
-      <from>Cancella i nomi file dal risultato</from>
+      <from>Delete files from the result</from>
       <to>Success</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
