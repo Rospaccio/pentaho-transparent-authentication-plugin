@@ -1,3 +1,5 @@
+## WARNING! This project has moved [here](https://github.com/Rospaccio/pentaho-transparent-authentication) (as a Maven module)
+
 ## PentahoTransparentAuthentication plugin
 
 This project contains the source files of the PentahoTransparentAuthentication plugin
